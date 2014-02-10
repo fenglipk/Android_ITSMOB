@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/help_bg_new"
+    android:gravity="fill" >
+
+    <TextView
+        android:id="@id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layy72"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/common_banner"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layy6"
+        android:text="设置"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/layy36" />
+
+    <ScrollView
+        android:layout_width="@dimen/layx800"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title"
+        android:layout_marginLeft="0.0px"
+        android:layout_marginTop="@dimen/layy20" >
+
+        <RelativeLayout
+            android:id="@id/music_bg"
+            android:layout_width="@dimen/layx800"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy60"
+                android:layout_marginLeft="@dimen/layx45"
+                android:background="@drawable/set_bg" />
+
+            <TextView
+                android:id="@id/music_pick"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy50"
+                android:layout_marginLeft="@dimen/layx45"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/layx10"
+                android:paddingTop="@dimen/layy5"
+                android:text="屏幕亮度与震动"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/layy31" />
+
+            <ImageView
+                android:id="@id/set_sound_vibrate"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy120"
+                android:layout_marginLeft="@dimen/layx45"
+                android:layout_marginTop="@dimen/layy50"
+                android:background="#ffe6e6e6" />
+
+            <ImageView
+                android:id="@id/imageItem_down"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy2"
+                android:layout_alignTop="@id/set_sound_vibrate"
+                android:layout_marginLeft="@dimen/layx45"
+                android:layout_marginTop="@dimen/layy60"
+                android:background="@drawable/common_line" />
+
+            <LinearLayout
+                android:id="@id/lay_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layy60"
+                android:layout_alignTop="@id/set_sound_vibrate"
+                android:layout_marginLeft="@dimen/layx70"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/yx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="音效"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/layy27" />
+
+                <ImageView
+                    android:id="@id/set_horn"
+                    android:layout_width="@dimen/layy30"
+                    android:layout_height="@dimen/layy30"
+                    android:layout_marginLeft="@dimen/layx5"
+                    android:src="@drawable/set_horn" />
+
+                <SeekBar
+                    android:id="@id/seekbar_yx"
+                    android:layout_width="@dimen/layx445"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layx5"
+                    android:maxHeight="@dimen/layy15"
+                    android:minHeight="@dimen/layy15"
+                    android:paddingLeft="@dimen/layx23"
+                    android:paddingRight="@dimen/layx23"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@drawable/setting_thumb"
+                    android:thumbOffset="@dimen/layx10" />
+
+                <ImageView
+                    android:id="@id/set_horning"
+                    android:layout_width="@dimen/layy30"
+                    android:layout_height="@dimen/layy30"
+                    android:layout_marginLeft="@dimen/layx5"
+                    android:src="@drawable/set_horning" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/yy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layy60"
+                android:layout_below="@id/lay_1"
+                android:layout_marginLeft="@dimen/layx70"
+                android:gravity="center_vertical"
+                android:text="音乐"
+                android:textColor="#ff333333"
+                android:textSize="@dimen/layy27" />
+
+             <com.example.dghdkg.SlipButton
+                android:id="@id/zd_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layy45"
+                android:layout_below="@id/lay_1"
+                android:layout_marginLeft="@dimen/layx570"
+                android:layout_marginTop="@dimen/layy10" />   
+
+            <TextView
+                android:id="@id/lay_2"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy50"
+                android:layout_below="@id/set_sound_vibrate"
+                android:layout_marginLeft="@dimen/layx45"
+                android:background="#ff002a48"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/layx10"
+                android:paddingTop="@dimen/layy5"
+                android:text="通用"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/layy31" />
+
+            <ImageView
+                android:id="@id/set_model"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy360"
+                android:layout_below="@id/lay_2"
+                android:layout_marginLeft="@dimen/layx45"
+                android:background="@drawable/common_kuang" />
+
+            <ImageView
+                android:id="@id/imageItem_down1"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy2"
+                android:layout_alignTop="@id/set_model"
+                android:layout_marginLeft="@dimen/layx45"
+                android:layout_marginTop="@dimen/layy60"
+                android:background="@drawable/common_line" />
+
+            <TextView
+                android:id="@id/sdms"
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy60"
+                android:layout_alignTop="@id/set_model"
+                android:layout_marginLeft="@dimen/layx45"
+                android:background="#ffe6e6e6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/layx25"
+                android:text="省电"
+                android:textColor="#ff333333"
+                android:textSize="@dimen/layy27" />
+            
+ 			<com.example.dghdkg.SlipButton
+                android:id="@id/sdmsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layy45"
+                android:layout_alignTop="@id/set_model"
+                android:layout_marginLeft="@dimen/layx570"
+                android:layout_marginTop="@dimen/layy10" />  
+
+            <ImageView
+                android:layout_width="@dimen/layx704"
+                android:layout_height="@dimen/layy2"
+                android:layout_alignTop="@id/set_model"
+                android:layout_marginLeft="@dimen/layx45"
+                android:layout_marginTop="@dimen/layy120"
+                android:background="@drawable/common_line" />
+
+          
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
